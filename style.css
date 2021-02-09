@@ -1,4 +1,4 @@
-  /* 
+/* 
   #e7ecef
   #274c77
   #6096ba
@@ -7,21 +7,72 @@
    */
 
 body {
-  background-color: #E7ECEF;
-  font-family: 'Roboto', sans-serif;
+  background-color: #e7ecef;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0 3rem;
+  color: #8b8c89;
 }
 
-
 #name {
-  font-family: 'Orbitron', sans-serif;
+  margin: 2rem 0;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
   text-align: center;
 }
 
+.img-container {
+  text-align: center;
+}
+
+#img-perfil {
+  height: 500px;
+  margin: 1rem auto;
+  border-radius: 15%;
+}
+
 #info-perfil {
-  color: #6096BA;
+  font-size: 1rem;
+  color: #6096ba;
+  font-size: 1.5em;
+  margin: 1rem auto;
+  width: 75%;
+  text-align: justify;
+}
+
+.title {
+  color: #696969;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.4em;
 }
 
 .list {
-  list-style: none;
-  margin: 0 0 10px  0;
+  padding: 0.2em 0.6rem;
+}
+
+.sub-list {
+  padding: 0 1em;
+  list-style: inside;
+}
+
+.list-item {
+  margin: 0.4em 0;
+}
+.nav-bar {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.nav-item {
+  font-size: 1.5em;
+  margin: 0 2em;
+  text-decoration: none;
+  color: #274c77;
 }

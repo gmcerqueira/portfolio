@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
     <title>Meu Portfólio Web</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,46 +19,61 @@
   </head>
   <body>
     <h1 id="name">Gustavo Matheus Cerqueira</h1>
-
-    <img id="img-perfil" src="perfil.png" alt="Foto perfil" height="500px" />
-
-    <div id="info-perfil">
-      <h2>
-        Engenheiro Civil de formação e estudante de Desenvolvimento de Software
-        na Trybe. <br />
-        Possuo dupla cidadania, brasileira e portuguêsa. Atualmente moro em Belo
-        Horizonte, Minas Gerais.
-      </h2>
+    <div class="img-container">
+      <img id="img-perfil" src="perfil.png" alt="Foto perfil" />
     </div>
+
+    <p id="info-perfil">
+      Engenheiro Civil de formação e estudante de Desenvolvimento de Software na
+      Trybe. Possuo dupla cidadania, brasileira e portuguêsa. Atualmente moro em
+      Belo Horizonte, Minas Gerais.
+    </p>
+
     <div id="list-qualities">
-      <h3>Qualidades</h3>
+      <h3 class="title">Qualidades</h3>
       <ul class="list">
-        <li>Aprendizado <strong>rápido</strong> e com <em>qualidade.</em></li>
-        <li>Vontade de sempre aprender novas tecnologias e ferramentas</li>
-        <li>
+        <li class="list-item">
+          Aprendizado <strong>rápido</strong> e com <em>qualidade;</em>
+        </li>
+        <li class="list-item">
+          Vontade de sempre aprender novas tecnologias e ferramentas;
+        </li>
+        <li class="list-item">Inglês avançado;</li>
+        <li class="list-item">Espanhol intermediário;</li>
+        <li class="list-item">
+          Vivencia internacional nos <strong>Estados Unidos e Espanha</strong>;
+        </li>
+        <li class="list-item">MBA em Gestão Estratégica de Negócios.</li>
+        <li class="list-item">
           Conhecimento em desenvolvimento:
-          <ul class="list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
-            <li>Python</li>
+          <ul class="sub-list">
+            <li class="list-item">Unix</li>
+            <li class="list-item">Zsh</li>
+            <li class="list-item">Git</li>
+            <li class="list-item">HTML</li>
+            <li class="list-item">CSS</li>
+            <li class="list-item">JavaScript</li>
+            <li class="list-item">React</li>
+            <li class="list-item">SQL</li>
           </ul>
         </li>
-        <li>Inglês avançado</li>
-        <li>Espanhol intermediário</li>
-        <li>
-          Vivencia internacional nos <strong>Estados Unidos e Espanha</strong>
+        <li class="list-item">
+          Conhecimentos básico em:
+          <ul class="sub-list">
+            <li class="list-item">Bootstrap</li>
+            <li class="list-item">Ruby</li>
+            <li class="list-item">Python</li>
+          </ul>
         </li>
-        <li>MBA em Gestão Estratégica de Negócios</li>
       </ul>
     </div>
 
-    <h3 id="list-experiences">Experiências</h3>
+    <h3 id="list-experiences" class="title">Experiências</h3>
     <ol class="list">
-      <li>
-        <h4>RIBE Engenharia. Belo Horizonte / MG (set/2017 - jul/2018)</h4>
+      <li class="list-item">
+        <h4 class="sub-title">
+          RIBE Engenharia. Belo Horizonte / MG (set/2017 - jul/2018)
+        </h4>
         Estagiário na construção de um prédio residencial de nove andares, com
         dois apartamentos por andar. Desde a concretagem das lajes até os
         retoques finais para a entrega dos apartamentos. Análise de preços e
@@ -65,8 +81,10 @@
         construção; verificação da execução do cronograma de trabalho; medições
         de materiais no local em dif
       </li>
-      <li>
-        <h4>Construtora GUIA. Sede em Nova Lima / MG (abr/2016 - jul/2016)</h4>
+      <li class="list-item">
+        <h4 class="sub-title">
+          Construtora GUIA. Sede em Nova Lima / MG (abr/2016 - jul/2016)
+        </h4>
         Estagiário na reforma total de um prédio histórico de vinte andares,
         projetado para ser o novo local dos escritórios de juízes do Tribunal de
         Justiça de Minas Gerais. Responsável pela verificação, no local, da
@@ -75,8 +93,8 @@
         verificação de consumo de materiais utilizados em diferentes etapas e
         projetos.
       </li>
-      <li>
-        <h4>
+      <li class="list-item">
+        <h4 class="sub-title">
           Montar Armaduras para Concreto Ltda. Contagem / MG (jun/2013 -
           jun/2015)
         </h4>
@@ -88,14 +106,17 @@
       </li>
     </ol>
 
-    <ul class="list">
-      <li><a href="#info-perfil">Perfil</a></li>
-      <li><a href="#img-perfil">Foto</a></li>
-      <li><a href="#list-qualities">Qualidade</a></li>
-      <li><a href="#list-experiences">Experiências</a></li>
-      <li>
-        <a href="https://www.legiaodosherois.com.br/" target="_blank">Blog</a>
-      </li>
-    </ul>
+    <div class="nav-bar">
+      <a class="nav-item" href="#info-perfil">Perfil</a>
+      <a class="nav-item" href="#img-perfil">Foto</a>
+      <a class="nav-item" href="#list-qualities">Qualidade</a>
+      <a class="nav-item" href="#list-experiences">Experiências</a>
+      <a
+        class="nav-item"
+        href="https://www.legiaodosherois.com.br/"
+        target="_blank"
+        >Blog</a
+      >
+    </div>
   </body>
 </html>
