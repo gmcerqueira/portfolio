@@ -6,6 +6,11 @@
   #8b8c89
    */
 
+body {
+  background-color: #E7ECEF;
+}
+
+
 #name {
   font-family: 'Orbitron', sans-serif;
   text-align: center;
