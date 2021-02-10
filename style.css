@@ -23,12 +23,19 @@ body {
 }
 
 .img-container {
-  text-align: center;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#img-logo{
+  height: 50px;
 }
 
 #img-perfil {
-  height: 500px;
-  margin: 1rem auto;
+  width: 300px;
+  margin: 1rem 0;
   border-radius: 15%;
 }
 
