@@ -23,11 +23,23 @@ body {
   text-transform: uppercase;
 }
 
+#perfil{
+  display: flex;
+  align-items: center;
+  margin: 1em 0 0 0;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #img-logo {
   width: 200px;
   position: absolute;
   left: 5.5em;
-  top: 5em;
+  top: 5.5em;
   z-index: 1;
   transition: 1s;
 }
@@ -40,20 +52,29 @@ body {
 #img-perfil {
   width: 300px;
   border-radius: 10%;
-  display: inline-block;
-
 }
 
 #info-perfil {
-  position: relative;
-  top: -100px;
-  display: inline-block;
   color: #6096ba;
   font-size: 1.5em;
   margin: 1rem 2rem;
   width: 30%;
   text-align: justify;
   line-height: 1.2em;
+}
+
+.icons-container{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  margin: .8em 0;
+}
+
+.icon {
+  padding: 0 50px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #696969;
 }
 
 .title {
