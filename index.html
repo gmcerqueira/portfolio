@@ -4,139 +4,232 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/90c5e90735.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style/reset.css" />
     <title>Meu Portfólio Web</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="style/style.css" />
   </head>
 
-  <body>
-    <h1 id="name">Gustavo Matheus Cerqueira</h1>
-    <div id="perfil">
-      <div class="img-container">
-        <a href="https://www.betrybe.com/" target="_blank">
-          <img id="img-logo" src="img/trybe_logo.png" alt="Logo Trybe" />
-        </a>
-        <img id="img-perfil" src="img/perfil.png" alt="Foto perfil" />
-        <div class="icons-container">
-          <a class="icon" href="https://github.com/gmcerqueira" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/gustavo-matheus-cerqueira-22a055b7/" class="icon" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
+  <header class="header my-5">
+    <h1 class="text-center mb-4">Gustavo Matheus Cerqueira</h1>
+    <div class="buttons-modal">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="botao"
+        data-bs-toggle="modal"
+        data-bs-target="#qualidades"
+      >
+        Qualidades
+      </button>
 
-      <div id="info-perfil">
-        <p>
-          Engenheiro Civil de formação e estudante de Desenvolvimento de
-          Software na Trybe. Possuo dupla cidadania, brasileira e portuguêsa.
-          Atualmente moro em Belo Horizonte, Minas Gerais.
-        </p>
-      </div>
-    </div>
+      <button
+        type="button"
+        class="botao"
+        data-bs-toggle="modal"
+        data-bs-target="#experiencias"
+      >
+        Experiências
+      </button>
 
-    <div id="list-qualities">
-      <h3 class="title">Qualidades</h3>
-      <ul class="list">
-        <li class="list-item">
-          Aprendizado <strong>rápido</strong> e com <em>qualidade;</em>
-        </li>
-        <li class="list-item">
-          Vontade de sempre aprender novas tecnologias e ferramentas;
-        </li>
-        <li class="list-item">Inglês avançado;</li>
-        <li class="list-item">Espanhol intermediário;</li>
-        <li class="list-item">
-          Vivencia internacional nos <strong>Estados Unidos e Espanha</strong>;
-        </li>
-        <li class="list-item">MBA em Gestão Estratégica de Negócios.</li>
-        <li class="list-item">
-          Conhecimento em desenvolvimento:
-          <ul class="sub-list">
-            <li class="list-item">Unix</li>
-            <li class="list-item">Zsh</li>
-            <li class="list-item">Git</li>
-            <li class="list-item">HTML</li>
-            <li class="list-item">CSS</li>
-            <li class="list-item">JavaScript</li>
-            <li class="list-item">React</li>
-            <li class="list-item">SQL</li>
-          </ul>
-        </li>
-        <li class="list-item">
-          Conhecimentos básicos em:
-          <ul class="sub-list">
-            <li class="list-item">Bootstrap</li>
-            <li class="list-item">Ruby</li>
-            <li class="list-item">Python</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-    <h3 id="list-experiences" class="title">Experiências</h3>
-    <ul class="list">
-      <li class="list-item">
-        <h4 class="sub-title">
-          RIBE Engenharia. Belo Horizonte / MG (set/2017 - jul/2018)
-        </h4>
-        Estagiário na construção de um prédio residencial de nove andares, com
-        dois apartamentos por andar. Desde a concretagem das lajes até os
-        retoques finais para a entrega dos apartamentos. Análise de preços e
-        características, seguida de compra materiais em diferentes fases da
-        construção; verificação da execução do cronograma de trabalho; medições
-        de materiais no local em diferentes etapas e projetos.
-      </li>
-      <li class="list-item">
-        <h4 class="sub-title">
-          Construtora GUIA. Sede em Nova Lima / MG (abr/2016 - jul/2016)
-        </h4>
-        Estagiário na reforma total de um prédio histórico de vinte andares,
-        projetado para ser o novo local dos escritórios de juízes do Tribunal de
-        Justiça de Minas Gerais. Responsável pela verificação, no local, da
-        realização do cronograma do trabalho; supervisão de projetos e execução
-        nas áreas de hidráulica, elétrica e de prevenção de incêndio; cálculo e
-        verificação de consumo de materiais utilizados em diferentes etapas e
-        projetos.
-      </li>
-      <li class="list-item">
-        <h4 class="sub-title">
-          Montar Armaduras para Concreto Ltda. Contagem / MG (jun/2013 -
-          jun/2015)
-        </h4>
-        Estagiário em uma planta industrial de porte médio, com cerca de 80
-        funcionários. Leitura, interpretação e criação do gerenciamento de
-        produção de projetos de estruturas internas de aço para estruturas de
-        concreto através do software de detalhamento de vergalhões Graphico Pro
-        da Schnell Software.
-      </li>
-    </ul>
-
-    <div class="nav-bar">
-      <a class="nav-item" href="#name">Perfil</a>
-      <a class="nav-item" href="#img-perfil">Foto</a>
-      <a class="nav-item" href="#list-qualities">Qualidades</a>
-      <a class="nav-item" href="#list-experiences">Experiências</a>
       <a
-        class="nav-item"
+        class="botao"
         href="https://www.legiaodosherois.com.br/"
         target="_blank"
         >Blog</a
       >
     </div>
+  </header>
+
+  <body>
+    <section class="perfil d-flex align-items-center justify-content-around">
+      <div
+        class="card p-4 bg-secondary rounded-5 border-0 d-flex"
+        style="width: 20rem"
+      >
+        <img
+          src="img/perfil2.png"
+          class="card-img-top rounded-circle"
+          alt="Foto perfil de Gustavo Cerqueira"
+        />
+        <div class="card-body p-0 pt-3 d-flex justify-content-around">
+          <a href="https://github.com/gmcerqueira" target="_blank" class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gustavo-matheus-cerqueira-22a055b7/"
+            target="_blank"
+            class="icon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="bi bi-linkedin"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="card border-0 w-50 perfil-text text-justify">
+        <p class="card-text fs-3 fw-light">
+          Engenheiro Civil de formação e estudante de Desenvolvimento de
+          Software na Trybe. Possuo dupla cidadania, brasileira e portuguêsa.
+          Atualmente moro em Belo Horizonte, Minas Gerais.
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="qualidades"
+        tabindex="-1"
+        aria-labelledby="qualidadesLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog mw-100">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="qualidadesLabel">Qualidades</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul class="">
+                <li class="">
+                  Aprendizado <strong><em>rápido e com qualidade;</em></strong>
+                </li>
+                <li class="">
+                  Vontade de sempre aprender novas tecnologias e ferramentas;
+                </li>
+                <li class="">Inglês avançado;</li>
+                <li class="">Espanhol intermediário;</li>
+                <li class="">
+                  Vivencia internacional nos
+                  <strong>Estados Unidos e Espanha</strong>;
+                </li>
+                <li class="">MBA em Gestão Estratégica de Negócios.</li>
+                <li class="">
+                  Conhecimento em desenvolvimento:
+                  <ul class="">
+                    <li class="">Unix</li>
+                    <li class="">Zsh</li>
+                    <li class="">Git</li>
+                    <li class="">HTML</li>
+                    <li class="">CSS</li>
+                    <li class="">JavaScript</li>
+                    <li class="">React</li>
+                    <li class="">SQL</li>
+                  </ul>
+                </li>
+                <li class="">
+                  Conhecimentos básicos em:
+                  <ul class="">
+                    <li class="">Bootstrap</li>
+                    <li class="">Ruby</li>
+                    <li class="">Python</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="experiencias"
+        tabindex="-1"
+        aria-labelledby="experienciasLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog mw-100">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="experienciasLabel">Experiências</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul class="text-justify">
+                <h4 class="pe-5">
+                  RIBE Engenharia. Belo Horizonte / MG (set/2017 - jul/2018)
+                </h4>
+                <li class="px-3 mb-2">
+                  Estagiário na construção de um prédio residencial de nove
+                  andares, com dois apartamentos por andar. Desde a concretagem
+                  das lajes até os retoques finais para a entrega dos
+                  apartamentos. Análise de preços e características, seguida de
+                  compra materiais em diferentes fases da construção;
+                  verificação da execução do cronograma de trabalho; medições de
+                  materiais no local em diferentes etapas e projetos.
+                </li>
+                <h4 class="pe-5">
+                  Construtora GUIA. Sede em Nova Lima / MG (abr/2016 - jul/2016)
+                </h4>
+                <li class="px-3 mb-2">
+                  Estagiário na reforma total de um prédio histórico de vinte
+                  andares, projetado para ser o novo local dos escritórios de
+                  juízes do Tribunal de Justiça de Minas Gerais. Responsável
+                  pela verificação, no local, da realização do cronograma do
+                  trabalho; supervisão de projetos e execução nas áreas de
+                  hidráulica, elétrica e de prevenção de incêndio; cálculo e
+                  verificação de consumo de materiais utilizados em diferentes
+                  etapas e projetos.
+                </li>
+                <h4 class="pe-5">
+                  Montar Armaduras para Concreto Ltda. Contagem / MG (jun/2013 -
+                  jun/2015)
+                </h4>
+                <li class="px-3 mb-2">
+                  Estagiário em uma planta industrial de porte médio, com cerca
+                  de 80 funcionários. Leitura, interpretação e criação do
+                  gerenciamento de produção de projetos de estruturas internas
+                  de aço para estruturas de concreto através do software de
+                  detalhamento de vergalhões Graphico Pro da Schnell Software.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
 </html>
