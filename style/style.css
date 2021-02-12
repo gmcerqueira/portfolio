@@ -46,17 +46,33 @@ body {
   color: #e7ecef;
 }
 
-.perfil {
+.perfil{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.perfil-cartao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   border-radius: .5em;
-  padding: 3rem;
+  padding: 2em 1em;
   background: #8b8c89;
   width: fit-content;
 }
 
 .perfil-img {
-  height: 200px;
+  height: 300px;
   border-radius: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
+}
+
+.perfil-info {
+  text-align: justify;
+  font-size: 1.5em;
+  width: 50%;
+  height: 100%;
 }
 
 .icons {
@@ -67,6 +83,14 @@ body {
 .icon {
   height: 50px;
   fill: #b8b8b8;;
+}
+
+.modal-dialog{
+  width: 70%;
+}
+
+.lista-circulo{
+  list-style: disc;
 }
 
 /* 
