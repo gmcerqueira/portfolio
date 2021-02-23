@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(253, 251, 251);
+  color: rgb(11, 11, 11);
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 25px 50px rgb(252, 252, 252);
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgb(194, 28, 14) 90%, rgb(253, 253, 253));
+  color: rgb(252, 252, 252);
+}
+
+#cabecalho nav {
+  margin-bottom: 1em;
+}
+
+#cabecalho a {
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+  padding: 0 2em;
+  font-size: 1.5em;
+}
+
+#principal {
+  position: relative;
+  top: 130px;
+  margin: 1em;
+}
+
+#perfil {
+  text-align: center;
+  width: calc(30% - 1em);
+  display: inline-block;
+}
+
+#perfil img {
+  width: 360px;
+  border-radius: 20%;
+  box-shadow: 3px 3px 10px black;
+}
+
+#perfil a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#listas {
+  display: inline-block;
+  width: calc(70% - 1em);
+  vertical-align: top;
+}
+
+.lista {
+  padding: 1em;
+  display: inline-block;
+  width: 350px;
+}
+
+#sobre {
+  margin: 0 auto;
+
+}
+
+#sobre_aluno , #sobre_aprendizado {
+  width: 48%;
+  display: inline-block;
+  margin: 0 1%;
+  line-height: 1.5em;
+}
+
+.lado-esquerdo {
+  float: left;
+}
+
+.lado-direito {
+  float: right;
+}
+
+#tabela {
+  clear: both;
+}
+
+
+#rodape {
+  position: relative;
+  top: 130px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgb(253, 253, 253);
+  width: 100%;
+  padding: 1em;
+  background-image: linear-gradient(rgb(253, 253, 253), rgb(194, 28, 14) 10%);
+  color: rgb(253, 253, 253);
+}
