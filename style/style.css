@@ -8,22 +8,22 @@
 
 body {
   background-color: #e7ecef;
+  color: #8b8c89;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
-  color: #8b8c89;
-  margin: 0 10em
+  margin: 0 10em;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .header {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-family: "Orbitron", sans-serif;
   margin: 2em 0;
 }
@@ -39,11 +39,11 @@ a {
 }
 
 .botao {
-  text-align: center;
-  text-decoration: none;
   background-color: #8b8c89;
   color: #e7ecef;
   padding: 0.4em 1em;
+  text-align: center;
+  text-decoration: none;
   width: 200px;
 }
 
@@ -52,32 +52,32 @@ a {
 }
 
 .perfil{
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
 }
 
 .perfil-cartao {
+  background: #8b8c89;
+  border-radius: .5em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-radius: .5em;
   padding: 2em 1em;
-  background: #8b8c89;
   width: fit-content;
 }
 
 .perfil-img {
-  height: 300px;
   border-radius: 50%;
+  height: 300px;
   margin-bottom: 2em;
 }
 
 .perfil-info {
-  text-align: justify;
-  font-size: 1.5em;
-  width: 50%;
   height: 100%;
+  font-size: 1.5em;
+  text-align: justify;
+  width: 50%;
 }
 
 .icons {
@@ -86,8 +86,8 @@ a {
 }
 
 .icon {
-  height: 50px;
   fill: #b8b8b8;;
+  height: 50px;
 }
 
 .modal-dialog{
@@ -104,6 +104,18 @@ a {
 
 .projetos ol{
   list-style: decimal;
+}
+
+#footer {
+  background-image: linear-gradient(rgb(231, 236, 239), rgb(139, 140, 137) 10%);
+  bottom: -.9em;
+  box-shadow: 0 25px 50px rgb(231, 236, 239);
+  color: rgb(231, 236, 239);
+  padding: .5em;
+  position: relative;
+  right: 10em;
+  text-align: center;
+  width: calc(100% + 20em);
 }
 
 /* 
