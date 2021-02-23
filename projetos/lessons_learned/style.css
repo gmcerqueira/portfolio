@@ -1,6 +1,6 @@
 body {
   background-color: rgb(253, 251, 251);
-  color: rgb(11, 11, 11);
+  color: rgb(139, 140, 137);
   margin: 0;
   font-family: Montserrat, sans-serif;
 }
@@ -9,11 +9,11 @@ body {
   position: fixed;
   top: 0;
   z-index: 2;
-  box-shadow: 0 25px 50px rgb(252, 252, 252);
+  box-shadow: 0 25px 50px rgb(231, 236, 239);;
   width: 100%;
   text-align: center;
-  background-image: linear-gradient(rgb(194, 28, 14) 90%, rgb(253, 253, 253));
-  color: rgb(252, 252, 252);
+  background-image: linear-gradient(rgb(139, 140, 137) 90%, rgb(231, 236, 239));
+  color: rgb(231, 236, 239);
 }
 
 #cabecalho nav {
@@ -21,16 +21,15 @@ body {
 }
 
 #cabecalho a {
-  color: rgb(253, 253, 253);
+  color: rgb(231, 236, 239);
   text-decoration: none;
   padding: 0 2em;
   font-size: 1.5em;
 }
 
 #principal {
-  position: relative;
-  top: 130px;
   margin: 1em;
+  margin-top: 10em;
 }
 
 #perfil {
@@ -42,7 +41,7 @@ body {
 #perfil img {
   width: 360px;
   border-radius: 20%;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 3px 3px 10px rgb(139, 140, 137);
 }
 
 #perfil a {
@@ -86,14 +85,11 @@ body {
   clear: both;
 }
 
-
 #rodape {
-  position: relative;
-  top: 130px;
   text-align: center;
-  box-shadow: 0 25px 50px rgb(253, 253, 253);
+  box-shadow: 0 25px 50px rgb(231, 236, 239);
   width: 100%;
   padding: 1em;
-  background-image: linear-gradient(rgb(253, 253, 253), rgb(194, 28, 14) 10%);
-  color: rgb(253, 253, 253);
+  background-image: linear-gradient(rgb(231, 236, 239), rgb(139, 140, 137) 10%);
+  color: rgb(231, 236, 239);
 }
