@@ -34,7 +34,7 @@ a {
 
 .buttons-modal {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 75%;
 }
 
@@ -98,7 +98,7 @@ a {
   list-style: disc;
 }
 
-.projetos {
+#projetos {
   margin-top: 2em;
 }
 
