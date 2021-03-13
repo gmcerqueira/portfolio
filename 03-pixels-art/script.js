@@ -118,7 +118,7 @@ function resizeBoard() {
 // PT-BR - Carregado após janela ser carregada
 window.onload = () => {
   createColorPalette(8);
-  createBoard(7);
+  createBoard(15);
   generateColorBtn.addEventListener("click", createColorPixel);
   generatePalletBtn.addEventListener("click", resizePallet);
   generateBoardBtn.addEventListener("click", resizeBoard);

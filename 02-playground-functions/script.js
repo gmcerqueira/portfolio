@@ -44,7 +44,7 @@ sentenceBtn.addEventListener("click", () => {
 // EN - Receives array of strings and return a new string with last item and first item from the original array, regardless of the size.
 // PT-BR - Receber uma array de strings e retornar uma string com o formato 'ÚLTIMO ITEM, PRIMEIRO ITEM', independente do tamanho da array.
 function concatName(names) {
-  names = names.value.split(",");
+  names = names.value.split(/,\s*|\s/);
   if (names.length >= 2) return `${names[names.length - 1]}, ${names[0]}`;
   return "Invalid input!";
 }
@@ -76,7 +76,7 @@ pointsBtn.addEventListener("click", () => {
 function highestCount(numbers) {
   let higherNumber = 0;
   let counter = 0;
-  numbers = numbers.value.split(",");
+  numbers = numbers.value.trim().split(/\s*,\s*|\s/);
   console.log(numbers);
   for (let i = 0; i < numbers.length; i += 1) {
     numbers[i] = parseInt(numbers[i]);

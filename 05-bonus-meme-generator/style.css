@@ -1,41 +1,62 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 0;
-  margin-left: 20px;
+  margin: 0;
 }
 
-.input {
+#main {
+  margin: 0 5%;
+}
+
+#title {
+  text-align: center;
+}
+
+#left{
+  min-width: 800px;
+}
+#left,
+#right {
+  float: left;
+  margin-bottom: 50px;
+}
+#right {
+  margin-left: 50px;
+  width: 40%;
+}
+
+#input {
   margin-bottom: 10px;
 }
 
 #meme-image-container {
-  height: 350px;
   border: 1px solid black;
   display: inline-block;
   background-color: white;
+  position: relative;
 }
 
 #meme-image {
-  height: 350px;
-  min-width: 500px;
+  max-height: 600px;
+  min-height: 500px;
+  max-width: 800px;
+  min-width: 400px;
 }
 
 #meme-text {
-  height: 120px;
-  max-width: 460px;
-  top: 340px;
+  position: absolute;
+  bottom: 50px;
   word-wrap: break-word;
-  position: fixed;
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
-  padding: 0 20px;
+  padding: 0 20% 0 5%;
   text-transform: uppercase;
   font-weight: 700;
   margin: 0;
 }
 
 .button {
+  border-radius: 7px;
   padding: 5px 15px;
   font-size: 20px;
   font-weight: 600;
@@ -58,5 +79,16 @@ body {
 
 .meme {
   height: 100px;
-  margin-left: 20px;
+  margin: 0 20px 20px 0;
+}
+
+#footer {
+  background-image: linear-gradient(rgb(231, 236, 239), grey 10%);
+  bottom: 0;
+  box-shadow: 0 25px 50px rgb(231, 236, 239);
+  color: rgb(231, 236, 239);
+  padding: 10px 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }

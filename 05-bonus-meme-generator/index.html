@@ -10,29 +10,48 @@
   </head>
   <body>
     <h1 id="title">Meme Generator</h1>
-    <section class="input">
-      <input id="text-input" type="text" maxlength="60" placeholder="Texto para o seu meme" />
-      <input id="meme-insert" accept="image/*" type="file" src="" alt="Selecione uma imagem do seu computado"/>
-    </section>
+    <main id="main">
+      <section id="left">
+        <section id="input">
+          <input
+            id="text-input"
+            type="text"
+            maxlength="120"
+            placeholder="Text for your meme"
+          />
+          <input
+            id="meme-insert"
+            accept="image/*"
+            type="file"
+            src=""
+          />
+        </section>
 
-    <section id="meme-image-container">
-      <img id="meme-image" src="" alt="Meme selecionado" />
-      <p id="meme-text">Seu texto aparecera aqui! Seja criativo ;)</p>
-    </section>
+        <section id="meme-image-container">
+          <img id="meme-image" src="" alt="Meme selecionado" />
+          <p id="meme-text">Your tex will appear here! Be creative ;)</p>
+        </section>
+      </section>
 
-    <section id="styles-buttons">
-      <h2>Estilos customizados</h2>
-      <button class="button" id="fire">Fire</button>
-      <button class="button" id="water">Water</button>
-      <button class="button" id="earth">Earth</button>
-    </section>
+      <section id="right">
+        <section id="styles-buttons">
+          <h2>Custom styles</h2>
+          <button class="button" id="fire">Fire</button>
+          <button class="button" id="water">Water</button>
+          <button class="button" id="earth">Earth</button>
+        </section>
 
-    <section id="pre-defined-memes">
-      <h2>Memes prontos</h2>
-      <img src="imgs/meme1.png" alt="" id="meme-1" class="meme" />
-      <img src="imgs/meme2.png" alt="" id="meme-2" class="meme" />
-      <img src="imgs/meme3.png" alt="" id="meme-3" class="meme" />
-      <img src="imgs/meme4.png" alt="" id="meme-4" class="meme" />
-    </section>
+        <section id="pre-defined-memes">
+          <h2>Memes samples</h2>
+          <img src="imgs/meme1.png" alt="" id="meme-1" class="meme" />
+          <img src="imgs/meme2.png" alt="" id="meme-2" class="meme" />
+          <img src="imgs/meme3.png" alt="" id="meme-3" class="meme" />
+          <img src="imgs/meme4.png" alt="" id="meme-4" class="meme" />
+          <img src="imgs/meme5.png" alt="" id="meme-5" class="meme" />
+        </section>
+      </section>
+    </main>
+
+    <footer id="footer">Gustavo Cerqueira © 2020 - All rights reserved</footer>
   </body>
 </html>

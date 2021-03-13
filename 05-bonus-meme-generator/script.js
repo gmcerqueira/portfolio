@@ -18,9 +18,9 @@ stylesBtn.addEventListener('click', (event) => {
 
   imageBorder.border = '';
 
-  if (event.target.id === 'fire') imageBorder.border = '3px dashed red';
-  if (event.target.id === 'water') imageBorder.border = '5px double blue';
-  if (event.target.id === 'earth') imageBorder.border = '6px groove green';
+  if (event.target.id === 'fire') imageBorder.border = '8px dashed red';
+  if (event.target.id === 'water') imageBorder.border = '9px double blue';
+  if (event.target.id === 'earth') imageBorder.border = '10px groove green';
 });
 
 preDefinedMemes.addEventListener('click', (event) => {
