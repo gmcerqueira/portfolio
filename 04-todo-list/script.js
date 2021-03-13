@@ -1,13 +1,13 @@
-const createTaskButton = document.querySelector('#criar-tarefa');
-const taskInput = document.querySelector('#texto-tarefa');
-const taskList = document.querySelector('#lista-tarefas');
-const deleteTasksButton = document.querySelector('#apaga-tudo');
-const removeDoneTasksButton = document.querySelector('#remover-finalizados');
+const createTaskButton = document.querySelector('#create-task');
+const taskInput = document.querySelector('#task-text');
+const taskList = document.querySelector('#task-list');
+const deleteTasksButton = document.querySelector('#clear-list');
+const removeDoneTasksButton = document.querySelector('#clear-done');
 const storage = localStorage;
-const saveTaskButton = document.querySelector('#salvar-tarefas');
-const taskUpButton = document.querySelector('#mover-cima');
-const taskDownButton = document.querySelector('#mover-baixo');
-const removeSelectedTaskButton = document.querySelector('#remover-selecionado');
+const saveTaskButton = document.querySelector('#save-tasks');
+const taskUpButton = document.querySelector('#move-up');
+const taskDownButton = document.querySelector('#move-down');
+const removeSelectedTaskButton = document.querySelector('#remove-selected');
 
 // Seleciona uma tarefa
 function selectTask(event) {
