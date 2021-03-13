@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pixels Art | Gustavo Cerqueira</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a href="../../index.html" class="button">HOME</a>
+    <h1 id="title">Pixel Art</h1>
+    <section id="color-palette"></section>
+
+    <button id="generate-color" class="button">Add random color</button>
+
+    <div class="input" id="pallet-input">
+      <input
+        id="pallet-size"
+        type="number"
+        min="1"
+        max="20"
+        placeholder="Colors"
+      />
+      <button id="generate-pallet" class="button">Create new pallet</button>
+    </div>
+
+    <div class="input" id="size-input">
+      <input
+        id="board-size"
+        type="number"
+        min="1"
+        max="50"
+        placeholder="Size"
+      />
+      <button id="generate-board" class="button">Resize board</button>
+    </div>
+
+    <button id="clear-board" class="button">Clear</button>
+
+    <table id="pixel-board"></table>
+
+    <footer id="footer">Gustavo Cerqueira © 2020 - All rights reserved</footer>
+  </body>
+</html>
