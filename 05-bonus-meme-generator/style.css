@@ -61,8 +61,16 @@ body {
   font-size: 20px;
   font-weight: 600;
   color: white;
+  background-color: grey;
   margin-right: 10px;
   border: none;
+  text-decoration: none;
+}
+
+a.button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0 auto;
 }
 
 #fire {
