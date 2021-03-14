@@ -1,5 +1,5 @@
 body {
-  margin-top: 200px;
+  margin: 50px;
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
@@ -13,18 +13,21 @@ body {
 }
 
 .button {
+  background-color: rgb(239, 239, 239);
+  width: fit-content;
   display: block;
   padding: 10px 20px;
   border: none;
   font-size: 24px;
   border-radius: 0.4em;
   color: #929292;
+  text-decoration: none;
+  margin: 20px auto;
 }
 
-#create-letter {
-  margin: 10px auto;
+a.button {
+  margin-bottom: 50px;
 }
-
 #counter {
   background-color: teal;
   color: white;
