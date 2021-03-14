@@ -1,0 +1,108 @@
+body {
+  margin-top: 200px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#letter-text {
+  padding: 10px;
+  resize: none;
+  line-height: 1.5em;
+  border: 1px solid #eaeaea;
+  border-radius: 0.7em;
+}
+
+.button {
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  border-radius: 0.4em;
+  color: #929292;
+}
+
+#create-letter {
+  margin: 10px auto;
+}
+
+#counter {
+  background-color: teal;
+  color: white;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: .4em;
+  font-size: 20px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+#word-counter {
+  display: inline-block;
+  margin: 0;
+}
+
+#letter-created {
+  text-align: justify;
+  margin: 0 auto;
+  width: 80%;
+  word-wrap: break-word;
+  line-height: 70px;
+}
+#letter-created div {
+  display: inline-block;
+  word-wrap: break-word;
+  margin-right: 10px;
+}
+
+.newspaper {
+  background-color: rgb(145, 145, 145);
+  color: rgb(48, 48, 48);
+  font-family: Times New Roman, Times, serif;
+  font-weight: 700;
+}
+
+.magazine1 {
+  background-color: teal;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.magazine2 {
+  background-image: url("images/pink-pattern.png");
+  color: fuchsia;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+}
+
+.medium {
+  font-size: 20px;
+  padding: 8px;
+}
+
+.big {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.reallyBig {
+  font-size: 40px;
+  padding: 15px;
+}
+
+.rotateLeft {
+  transform: rotate(-5deg);
+}
+
+.rotateRight {
+  transform: rotate(5deg);
+}
+
+.skewLeft {
+  transform: skewX(10deg);
+}
+
+.skewRight {
+  transform: skewX(-10deg);
+}

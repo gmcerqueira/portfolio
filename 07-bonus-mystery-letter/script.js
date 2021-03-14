@@ -1,7 +1,7 @@
-const letterInput = document.querySelector('#carta-texto');
-const createBtn = document.querySelector('#criar-carta');
-const letterContainer = document.querySelector('#carta-gerada');
-const wordCounter = document.querySelector('#carta-contador');
+const letterInput = document.querySelector('#letter-text');
+const createBtn = document.querySelector('#create-letter');
+const letterContainer = document.querySelector('#letter-created');
+const wordCounter = document.querySelector('#word-counter');
 
 const styles = [
   'newspaper',
@@ -9,11 +9,11 @@ const styles = [
   'magazine2',
   'medium',
   'big',
-  'reallybig',
-  'rotateleft',
-  'rotateright',
-  'skewleft',
-  'skewright',
+  'reallyBig',
+  'rotateLeft',
+  'rotateRight',
+  'skewLeft',
+  'skewRight',
 ];
 
 function randomNum(max) {
@@ -23,20 +23,21 @@ function randomNum(max) {
 function randomClasses(element) {
   const size = styles.length;
   element.removeAttribute('class');
-  element.classList.add(styles[randomNum(size)], styles[randomNum(size)], styles[randomNum(size)]);
+  element.classList.add(styles[randomNum(size)], styles[randomNum(size)], styles[randomNum(size)], styles[randomNum(size)]);
 }
 
 function createLetter() {
   letterContainer.innerHTML = '';
   const words = letterInput.value.trim().split(' ');
   if (!letterInput.value.trim()) {
-    letterContainer.innerHTML = 'Por favor, digite o conteúdo da carta.';
+    letterContainer.innerHTML = 'Please type something.';
+    randomClasses(letterContainer)
     return;
   }
   for (let i = 0; i < words.length; i += 1) {
-    const word = document.createElement('span');
+    const word = document.createElement('div');
     randomClasses(word);
-    word.innerHTML = words[i];
+    word.innerHTML = `${words[i]} `;
     word.addEventListener('click', () => randomClasses(word));
     letterContainer.appendChild(word);
   }
