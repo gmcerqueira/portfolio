@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 20 20" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path d="M 63.061 30.43 H 68.061 V 38.93 H 76.561 V 43.93 H 68.061 V 52.43 H 63.061 V 43.93 H 54.561 V 38.93 H 63.061 Z" style="fill: rgb(216, 216, 216);" transform="matrix(0.707125, 0.707089, -0.707089, 0.707125, -7.064847, -65.65358)" bx:shape="cross 54.561 30.43 22 22 5 5 0.5 1@08d8fdc4" bx:origin="0.499931 0.499959"/>
+</svg>
