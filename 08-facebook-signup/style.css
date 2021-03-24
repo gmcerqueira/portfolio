@@ -14,7 +14,7 @@
   width: 980px;
   display: flex;
   justify-content: space-between;
-  padding: 15px 0 7px ;
+  padding: 15px 0 7px;
 }
 
 .facebook-logo {
@@ -67,9 +67,10 @@
 
 .main-container {
   display: flex;
-  justify-content: center;
-  padding: 20px 0 80px;
-  background: linear-gradient(white, #D3D8E8);
+  flex-flow: column;
+  align-items: center;
+  padding: 20px 0;
+  background: linear-gradient(white, #d3d8e8);
 }
 
 .main-content {
@@ -121,7 +122,8 @@
   width: 43%;
 }
 
-.input-register {
+.input-register,
+#input-custom {
   margin-bottom: 10px;
   padding: 8px 10px;
   font-size: 18px;
@@ -129,7 +131,8 @@
   border-radius: 5px;
 }
 
-#label-birthdate , #label-gender {
+#label-birthdate,
+#label-gender {
   color: hsl(220, 6%, 59%);
   font-size: 16px;
   font-weight: 700;
@@ -148,11 +151,15 @@
 .input-gender {
   margin-right: 5px;
 }
+
+#input-custom {
+  display: none;
+}
 .legend {
   color: #777;
-    font-size: 11px;
-    width: 78%;
-    margin: 11px 0;
+  font-size: 11px;
+  width: 78%;
+  margin: 11px 0;
 }
 
 #facebook-register {
@@ -180,4 +187,32 @@ hr {
   border: 0;
   border-top: 2px solid #f1f1f1;
   margin: 10px 0;
+  width: 85%;
+}
+
+.home-button {
+  display: flex;
+  flex-flow: column;
+  width: 85%;
+  align-items: center;
+}
+.button {
+  text-decoration: none;
+  margin-top: 17px;
+  padding: 10px 20px;
+  background-color: rgb(66, 104, 179);
+  border: 1px solid rgb(41, 72, 125);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+#footer{
+  background-color: rgb(59, 89, 152);
+  bottom: 0;
+  box-shadow: 0 25px 50px #3b5998;
+  color: rgb(231, 236, 239);
+  padding: 10px 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }
