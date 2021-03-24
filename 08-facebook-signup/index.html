@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Project Facebook Sign Up | Gustavo Cerqueira Frederico Martins
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="top-bar-container">
+      <header class="top-bar">
+        <img
+          class="facebook-logo"
+          src="img/facebook-logo.svg"
+          alt="Logo Facebook"
+        />
+        <form class="facebook-login">
+          <div class="form-group">
+            <label
+              id="user-email-phone-label"
+              class="login-label"
+              for="user-email-phone"
+              >Email or Phone</label
+            >
+            <input
+              id="user-email-phone"
+              class="login-input"
+              name="user"
+              type="text"
+              value="exemplo@exemplo.com"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              id="user-password-label"
+              class="login-label"
+              for="user-password"
+              >Password</label
+            >
+            <input
+              id="user-password"
+              class="login-input"
+              name="user-password"
+              type="password"
+              value="123456"
+            />
+            <a id="forgot" href="#">Forgot account?</a>
+          </div>
+          <div class="form-control">
+            <button id="button-login" type="submit">Entrar</button>
+          </div>
+        </form>
+      </header>
+    </div>
+    <div class="main-container">
+      <main class="main-content">
+        <div class="left-content">
+          <p id="facebook-slogan">
+            Connect with friends and the world around you on Facebook.
+          </p>
+          <img id="facebook-networking" src="img/networking.png" alt="" />
+        </div>
+
+        <div class="right-content">
+          <h1>Sign Up</h1>
+          <span class="quick-easy">It’s quick and easy.</span>
+          <form class="form-group" id="form-register">
+            <div class="user-name">
+              <input
+                id="first-name"
+                class="input-register"
+                type="text"
+                name="firstname"
+                placeholder="First name"
+                value="Roberto"
+              />
+              <input
+                id="last-name"
+                class="input-register"
+                type="text"
+                name="lastname"
+                placeholder="Last name"
+                value="Magalhães"
+              />
+            </div>
+
+            <input
+              id="phone_email"
+              type="text"
+              name="phone_email"
+              placeholder="Mobile number or email"
+              class="input-register"
+              value="exemplo@exemplo.com"
+            />
+
+            <input
+              type="password"
+              name="password"
+              placeholder="New password"
+              class="input-register"
+              value="123456"
+            />
+
+            <label id="label-birthdate" for="birthdate">Birthday</label>
+            <input
+              id="birth-date"
+              type="date"
+              name="birthdate"
+              class="input-register"
+            />
+
+            <label id="label-gender">Gender</label>
+            <div class="genders">
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="Female"
+                class="input-gender"
+              />
+              <label for="female">Female</label>
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="Male"
+                class="input-gender"
+              />
+              <label for="male">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                id="custom"
+                value="Custom"
+                class="input-gender"
+              />
+              <label for="custom">Custom</label>
+            </div>
+
+            <legend class="legend">
+              By clicking Sign Up, you agree to our Terms, Data Policy and
+              Cookies Policy. You may receive SMS Notifications from us and can
+              opt out any time.
+            </legend>
+
+            <button id="facebook-register" type="submit">Cadastre-se</button>
+            <hr />
+            <p id="invalid-input">Campos inválidos!</p>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

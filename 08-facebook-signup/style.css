@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-bar-container {
+  display: flex;
+  justify-content: center;
+  background-color: #3b5998;
+}
+
+.top-bar {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 7px ;
+}
+
+.facebook-logo {
+  width: 170px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.login-label {
+  color: white;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.login-input {
+  padding: 3px;
+  margin-right: 10px;
+  width: 140px;
+}
+
+#forgot {
+  text-decoration: none;
+  color: #9cb4d8;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+  height: 100%;
+}
+
+#button-login {
+  margin: 17px 0;
+  padding: 2px 6px;
+  background-color: rgb(66, 104, 179);
+  border: 1px solid rgb(41, 72, 125);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 80px;
+  background: linear-gradient(white, #D3D8E8);
+}
+
+.main-content {
+  display: flex;
+  width: 980px;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 565px;
+}
+
+#facebook-slogan {
+  font-size: 20px;
+  font-weight: 600;
+  width: 60%;
+  color: rgb(14, 56, 95);
+  margin-top: 20px;
+}
+
+#facebook-networking {
+  width: 90%;
+}
+
+.right-content {
+  width: 400px;
+}
+
+.right-content h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.quick-easy {
+  font-size: 19px;
+}
+
+#form-register {
+  margin-top: 20px;
+}
+
+.user-name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user-name input {
+  width: 43%;
+}
+
+.input-register {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  font-size: 18px;
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
+}
+
+#label-birthdate , #label-gender {
+  color: hsl(220, 6%, 59%);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.genders {
+  display: flex;
+}
+
+.genders label {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.input-gender {
+  margin-right: 5px;
+}
+.legend {
+  color: #777;
+    font-size: 11px;
+    width: 78%;
+    margin: 11px 0;
+}
+
+#facebook-register {
+  width: 60%;
+  background: linear-gradient(#67ae55, #578843);
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.user-register {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#invalid-input {
+  color: transparent;
+  font-size: 20px;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #f1f1f1;
+  margin: 10px 0;
+}
