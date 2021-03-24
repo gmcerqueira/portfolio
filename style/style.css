@@ -68,8 +68,11 @@ a {
 }
 
 .perfil-img {
+  background: url(../img/perfil.JPG) no-repeat 54% 14%;
+  background-size: 140%;
   border-radius: 50%;
   height: 300px;
+  width: 300px;
   margin-bottom: 2em;
 }
 
