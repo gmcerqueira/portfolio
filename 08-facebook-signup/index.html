@@ -31,27 +31,27 @@
               class="login-input"
               name="user"
               type="text"
-              value="exemplo@exemplo.com"
-            />
-          </div>
-          <div class="form-group">
-            <label
+              placeholder="Email or phone"
+              />
+            </div>
+            <div class="form-group">
+              <label
               id="user-password-label"
               class="login-label"
               for="user-password"
               >Password</label
-            >
-            <input
+              >
+              <input
               id="user-password"
               class="login-input"
               name="user-password"
               type="password"
-              value="123456"
-            />
-            <a id="forgot" href="#">Forgot account?</a>
+              placeholder="Password"
+              />
+              <a id="forgot" href="#">Forgot account?</a>
           </div>
           <div class="form-control">
-            <button id="button-login" type="submit">Entrar</button>
+            <button id="button-login" type="submit">Log In</button>
           </div>
         </form>
       </header>
@@ -153,6 +153,11 @@
             <p id="invalid-input">Invalid inputs</p>
           </form>
         </div>
+        <div class="separator">
+          <hr><span>or</span><hr>
+        </div>
+        <button id="facebook-register-hidden" type="submit">Sign up</button>
+        <a id="forgot-password" href="#">Forgot password?</a>
       </main>
       <hr />
       <a href="../" class="button">HOME</a>

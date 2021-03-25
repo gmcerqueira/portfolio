@@ -34,10 +34,14 @@
 .login-input {
   padding: 3px;
   margin-right: 10px;
-  width: 140px;
 }
 
-#forgot {
+.login-input::placeholder {
+  color: transparent;
+}
+
+#forgot,
+#forgot-password {
   text-decoration: none;
   color: #9cb4d8;
   font-size: 12px;
@@ -51,7 +55,6 @@
 
 .form-control {
   display: flex;
-  align-self: flex-end;
   height: 100%;
 }
 
@@ -131,6 +134,11 @@
   border-radius: 5px;
 }
 
+::placeholder {
+  color: #cacaca;
+  opacity: 1; /* Firefox */
+}
+
 #label-birthdate,
 #label-gender {
   color: hsl(220, 6%, 59%);
@@ -173,6 +181,22 @@
   margin-top: 10px;
 }
 
+.separator {
+  display: none;
+}
+
+#facebook-register-hidden {
+  width: 60%;
+  background: linear-gradient(#67ae55, #578843);
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 10px;
+
+  display: none;
+}
+
 .user-register {
   margin-bottom: 10px;
   font-size: 18px;
@@ -182,10 +206,13 @@
   color: transparent;
   font-size: 20px;
 }
+#forgot-password {
+  display: none;
+}
 
 hr {
   border: 0;
-  border-top: 2px solid #f1f1f1;
+  border-top: 1px solid #d4d4d4;
   margin: 10px 0;
   width: 85%;
 }
@@ -206,7 +233,7 @@ hr {
   font-size: 20px;
   font-weight: 600;
 }
-#footer{
+#footer {
   background-color: rgb(59, 89, 152);
   bottom: 0;
   box-shadow: 0 25px 50px #3b5998;
@@ -215,4 +242,118 @@ hr {
   position: fixed;
   text-align: center;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .top-bar-container {
+    background-color: #ffffff;
+  }
+
+  .top-bar {
+    flex-flow: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .facebook-logo {
+    background-color: #3b5998;
+    padding: 10px;
+    width: 100%;
+    height: 25px;
+  }
+
+  .facebook-login {
+    flex-flow: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .login-label,
+  #forgot {
+    display: none;
+  }
+
+  .login-input {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    background-color: #f5f6f7;
+    border: 1px solid rgb(228, 228, 228);
+  }
+
+  #user-email-phone {
+    border-radius: 4px 4px 0 0;
+  }
+
+  #user-password {
+    border-radius: 0 0 4px 4px;
+  }
+
+  .login-input::placeholder {
+    color: #acacac;
+  }
+
+  .form-group {
+    align-items: center;
+    width: 100%;
+  }
+
+  .form-control {
+    width: 100%;
+    justify-content: center;
+  }
+  #button-login {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px 6px;
+    border-radius: 5px;
+    background-color: #1877f2;
+    border: none;
+    margin: 10px 0;
+  }
+  .main-container {
+    background: #ffffff;
+  }
+
+  .main-content {
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .left-content,
+  .right-content {
+    display: none;
+  }
+
+  .separator {
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+    align-items: center;
+  }
+
+  .separator span {
+    margin: 0 10px;
+  }
+
+  #forgot-password {
+    display: inline;
+    color: #7898c9;
+  }
+
+  #facebook-register-hidden {
+    display: inline-block;
+    background: #40a400;
+    border: none;
+    margin: 20px 0 10px;
+    width: 100px;
+  }
+
+  hr {
+    width: 75%;
+  }
 }
