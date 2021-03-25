@@ -11,10 +11,12 @@
 }
 
 .top-bar {
-  width: 980px;
+  width: 100%;
+  max-width: 980px;
   display: flex;
   justify-content: space-between;
   padding: 15px 0 7px;
+  margin: 0 50px;
 }
 
 .facebook-logo {
@@ -253,6 +255,7 @@ hr {
     flex-flow: column;
     align-items: center;
     padding: 0;
+    margin: 0;
   }
 
   .facebook-logo {
