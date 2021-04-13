@@ -75,6 +75,7 @@
   flex-flow: column;
   align-items: center;
   padding: 20px 0;
+  height: 100vh;
   background: linear-gradient(white, #d3d8e8);
 }
 
