@@ -1,17 +1,17 @@
-const textInput = document.querySelector("#text-input");
-const memeText = document.querySelector("#meme-text");
-const insertImg = document.querySelector("#meme-insert");
-const memeImg = document.querySelector("#meme-image");
-const stylesBtn = document.querySelector("#styles-buttons");
-const preDefinedMemes = document.getElementById("pre-defined-memes");
-const imageBorder = document.getElementById("meme-image-container").style;
+const textInput = document.querySelector('#text-input');
+const memeText = document.querySelector('#meme-text');
+const insertImg = document.querySelector('#meme-insert');
+const memeImg = document.querySelector('#meme-image');
+const stylesBtn = document.querySelector('#styles-buttons');
+const preDefinedMemes = document.getElementById('pre-defined-memes');
+const imageBorder = document.getElementById('meme-image-container').style;
 
 function changeBorder(event) {
-  imageBorder.border = "";
+  imageBorder.border = '';
 
-  if (event.target.id === "fire") imageBorder.border = "8px dashed red";
-  if (event.target.id === "water") imageBorder.border = "9px double blue";
-  if (event.target.id === "earth") imageBorder.border = "10px groove green";
+  if (event.target.id === 'fire') imageBorder.border = '8px dashed red';
+  if (event.target.id === 'water') imageBorder.border = '9px double blue';
+  if (event.target.id === 'earth') imageBorder.border = '10px groove green';
 }
 
 function changeMemeText() {
@@ -27,11 +27,11 @@ function selectPreDefinedMeme(event) {
 }
 
 window.onload = () => {
-  textInput.addEventListener("input", changeMemeText);
+  textInput.addEventListener('input', changeMemeText);
 
-  insertImg.addEventListener("change", loadMemeImg);
+  insertImg.addEventListener('change', loadMemeImg);
 
-  stylesBtn.addEventListener("click", changeBorder);
+  stylesBtn.addEventListener('click', changeBorder);
 
-  preDefinedMemes.addEventListener("click", selectPreDefinedMeme);
+  preDefinedMemes.addEventListener('click', selectPreDefinedMeme);
 };

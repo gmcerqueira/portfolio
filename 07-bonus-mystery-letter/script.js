@@ -23,7 +23,12 @@ function randomNum(max) {
 function randomClasses(element) {
   const size = styles.length;
   element.removeAttribute('class');
-  element.classList.add(styles[randomNum(size)], styles[randomNum(size)], styles[randomNum(size)], styles[randomNum(size)]);
+  element.classList.add(
+    styles[randomNum(size)],
+    styles[randomNum(size)],
+    styles[randomNum(size)],
+    styles[randomNum(size)],
+  );
 }
 
 function createLetter() {
@@ -31,7 +36,7 @@ function createLetter() {
   const words = letterInput.value.trim().split(' ');
   if (!letterInput.value.trim()) {
     letterContainer.innerHTML = 'Please type something.';
-    randomClasses(letterContainer)
+    randomClasses(letterContainer);
     return;
   }
   for (let i = 0; i < words.length; i += 1) {
