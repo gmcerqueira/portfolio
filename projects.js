@@ -48,6 +48,12 @@ const projects = [
     description: 'Copy of the old sing up page from facebook using adaptive styling for different screen sizes.',
     image: './img/projects_covers/08-facebook-signup.png',
   },
+  {
+    name: 'Shopping Cart',
+    path: './11-shopping-cart',
+    description: '',
+    image: './img/projects_covers/11-shopping-cart.png',
+  },
 ];
 
 export default projects;
