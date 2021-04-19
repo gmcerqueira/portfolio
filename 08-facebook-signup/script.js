@@ -1,9 +1,9 @@
-const loginBtn = document.querySelector("#button-login");
-const inputsRegister = document.querySelectorAll(".input-register");
-const user = document.querySelector("#user-email-phone");
-const inputsGender = document.querySelectorAll(".input-gender");
-const otherGender = document.querySelector("#custom");
-const registerBtn = document.querySelector("#facebook-register");
+const loginBtn = document.querySelector('#button-login');
+const inputsRegister = document.querySelectorAll('.input-register');
+const user = document.querySelector('#user-email-phone');
+const inputsGender = document.querySelectorAll('.input-gender');
+const otherGender = document.querySelector('#custom');
+const registerBtn = document.querySelector('#facebook-register');
 
 function validatesInputs() {
   let validInputs = true;
@@ -37,36 +37,36 @@ function selectGender() {
 
 function validatesRegister() {
   let valid = true;
-  const error = document.querySelector("#invalid-input");
+  const error = document.querySelector('#invalid-input');
 
   if (!validatesInputs() || !validatesGender()) {
-    error.style.color = "red";
+    error.style.color = 'red';
     valid = false;
   }
   return valid;
 }
 
-loginBtn.addEventListener("click", (event) => {
+loginBtn.addEventListener('click', (event) => {
   event.preventDefault();
   const res = user.value;
   return alert(res);
 });
 
 inputsGender.forEach((gender) => {
-  gender.addEventListener("click", () => {
-    document.querySelector("#input-custom ").style.display = "none";
+  gender.addEventListener('click', () => {
+    document.querySelector('#input-custom ').style.display = 'none';
   });
 });
 
-otherGender.addEventListener("click", () => {
-  document.querySelector("#input-custom ").style.display = "block";
+otherGender.addEventListener('click', () => {
+  document.querySelector('#input-custom ').style.display = 'block';
 });
 
-registerBtn.addEventListener("click", (event) => {
+registerBtn.addEventListener('click', (event) => {
   event.preventDefault();
 
   if (validatesRegister()) {
-    const rightContent = document.querySelector(".right-content");
+    const rightContent = document.querySelector('.right-content');
 
     rightContent.innerHTML = `
     <p class="user-register">

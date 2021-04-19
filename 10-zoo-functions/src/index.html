@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo Functions | Gustavo Cerqueira</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./bundle.js" defer></script>
+  </head>
+  <body>
+    <a href="../" class="button">Home</a>
+    <h1 id="title">Zoo Functions</h1>
+    <main id="main">
+      <!-- <section class="function">
+        <h2 class="function-title">Verify the return from two booleans.</h2>
+        <select class="input" id="boolean1">
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+        <select class="input" id="boolean2">
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+        <button class="button" id="check-boolean">Check</button>
+        <p>Result: <span id="boolean-response"></span></p>
+      </section> -->
+
+      <section class="function">
+        <h2 class="function-title">Get the specie from the correspond ID</h2>
+        <label class="label" for="animal-id">ID: </label>
+        <input class="input" id="animal-id" type="text" />
+
+        <button class="button" id="check-animal-id">Check</button>
+        <p>Result: <span id="animal-id-response"></span></p>
+      </section>
+
+      <section class="function">
+        <h2 class="function-title">
+          Checks if all animals from a specific specie have de minimal age
+          specified
+        </h2>
+        <label class="label" for="animal-specie">Species: </label>
+        <input class="input" id="animal-specie" type="text" />
+        <label class="label" for="minimum-age">Age: </label>
+        <input class="input" id="minimum-age" type="number" min="0" />
+
+        <button class="button" id="check-minimum-age">Check</button>
+        <p>Result: <span id="minimum-age-response"></span></p>
+      </section>
+
+      <section class="function">
+        <h2 class="function-title">
+          Separate words in a sentence between spaces.
+        </h2>
+        <label class="label" for="sentence">Sentence: </label>
+        <input class="input" id="sentence" type="text" />
+
+        <button class="button" id="check-sentence">Check</button>
+        <p>Result: <span id="sentence-response"></span></p>
+      </section>
+
+      <!-- 
+      <section class="function">
+        <h2 class="function-title">
+          Receive array of names and return a new string with "last item , first
+          item" from the original array.
+          <br />
+          There must be at least two names.
+        </h2>
+        <label class="label" for="names">Names: </label>
+        <input class="input" id="names" type="text" />
+
+        <button class="button" id="check-names">Check</button>
+        <p>Result: <span id="names-response"></span></p>
+      </section>
+
+      <section class="function">
+        <h2 class="function-title">
+          Return points from a team from number of victories(3pts) and
+          ties(1pt).
+        </h2>
+        <label class="label" for="victories">Victories: </label>
+        <input class="input" id="victories" type="number" />
+
+        <label class="label" for="ties">Ties: </label>
+        <input class="input" id="ties" type="number" />
+
+        <button class="button" id="check-points">Check</button>
+        <p>Result: <span id="points-response"></span></p>
+      </section>
+
+      <section class="function">
+        <h2 class="function-title">
+          The number of times that the highest number from a array appears
+        </h2>
+        <label class="label" for="numbers">Numbers: </label>
+        <input class="input" id="numbers" type="text" />
+
+        <button class="button" id="check-numbers">Check</button>
+        <p>Result: <span id="numbers-response"></span></p>
+      </section>
+
+      <section class="function">
+        <h2 class="function-title">
+          Which cat will catch the mouse? Or the mouse runs away?<br />
+          Enter the distances that which cat is from the mouse:
+        </h2>
+        <label class="label" for="cat1">Salem: </label>
+        <input class="input" id="cat1" type="number" />
+
+        <label class="label" for="cat2">Mr Fluffles: </label>
+        <input class="input" id="cat2" type="number" />
+
+        <button class="button" id="check-cats">Check</button>
+        <p>Result: <span id="cats-response"></span></p>
+      </section>
+
+      <section class="function">
+        <h2 class="function-title">Number is divisible by 3, 5 or both?</h2>
+        <label class="label" for="divisible">Number: </label>
+        <input class="input" id="divisible" type="number" />
+
+        <button class="button" id="check-divisible">Check</button>
+        <p>Result: <span id="divisible-response"></span></p>
+      </section>
+
+      <section class="function">
+        <h2 class="function-title">
+          Encodes message by changing vowels to numbers.
+        </h2>
+        <label class="label" for="encode-msg">Message: </label>
+        <input class="input" id="encode-msg" type="text" />
+
+        <button class="button" id="check-encode">Encode</button>
+        <p>Result: <span id="encode-response"></span></p>
+      </section>
+
+      <section class="function">
+        <h2 class="function-title">
+          Decodes message by changing numbers to vowels.
+        </h2>
+        <label class="label" for="decode-msg">Message: </label>
+        <input class="input" id="decode-msg" type="text" />
+
+        <button class="button" id="check-decode">Decode</button>
+        <p>Result: <span id="decode-response"></span></p>
+      </section>
+
+      <section class="function">
+        <h2 class="function-title">
+          Generate a phone number in the brazilian format.
+        </h2>
+        <label class="label" for="phone-number">Number: </label>
+        <input class="input" id="phone-number" type="text" />
+
+        <button class="button" id="check-phone">Create</button>
+        <p>Result: <span id="phone-response"></span></p>
+      </section>
+
+      <section class="function">
+        <h2 class="function-title">
+          Gives a suggestion of how many glasses of water you should drink.
+        </h2>
+        <label class="label" for="drinks">List your drinks: </label>
+        <input class="input" id="drinks" type="text" />
+
+        <button class="button" id="check-drinks">Ask for suggestion</button>
+        <p>Result: <span id="drinks-response"></span></p>
+      </section> -->
+    </main>
+    <footer id="footer">Gustavo Cerqueira © 2020 - All rights reserved</footer>
+  </body>
+</html>

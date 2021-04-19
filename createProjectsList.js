@@ -20,7 +20,6 @@ const createProjectCard = (project) => {
   card.appendChild(cardImage);
 
   projectsList.appendChild(card);
-  console.log(card);
 };
 
 projects.map((project) => createProjectCard(project));

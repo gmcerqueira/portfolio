@@ -1,0 +1,72 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  width: 100%;
+}
+
+#main {
+  margin: 50px 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+}
+
+#title {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 40px;
+  color: rgb(0, 202, 202);
+}
+
+.function {
+  vertical-align: middle;
+  background-color: rgb(231, 231, 231);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.label {
+  font-size: 18px;
+}
+
+.input {
+  padding: 5px 10px;
+}
+
+.input[type="number"] {
+  width: 50px;
+}
+
+.input[type="text"] {
+  width: 250px;
+}
+
+.button {
+  outline:none;
+  display: block;
+  margin-top: 10px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 18px;
+  background-color: rgb(0, 202, 202);
+  font-weight: 900;
+  font-size: 18px;
+  color: wheat;
+  text-decoration: none;
+}
+
+a.button {
+  width: fit-content;
+  margin: 30px auto;
+}
+
+#footer {
+  background-image: linear-gradient(rgb(231, 236, 239), rgb(139, 140, 137) 10%);
+  bottom: 0;
+  box-shadow: 0 25px 50px rgb(231, 236, 239);
+  color: rgb(231, 236, 239);
+  padding: 10px 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}

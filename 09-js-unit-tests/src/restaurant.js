@@ -84,7 +84,7 @@ const orderFromMenu = (request) => {
 
 const payOrder = (menu) => {
   let payment = 0;
-  let tip = 1.1;
+  const tip = 1.1;
   const { foods } = menu;
   const { drinks } = menu;
   const { consumption } = this;
